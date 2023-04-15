@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="rofnas">
+    <title>ENCRIPTADOR &nbsp;&nbsp;&nbsp;&nbsp/></title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" media="screen and (max-width: 768px)" href="css/mobile.css">
+git    <!-- tag property -->
+    <meta property="og:url" content="https://rofnas.github.io/criptografia">
+    <meta name="twitter:card" content="summary_large_image">
+    </head>
+    <body>
+        <main>
+            <header>
+                
+            </header>
+            <div id="regras">&nbsp;</div>
+            <div id="txt">
+                <div></div>
+                <div>
+                    <textarea class="txts" rows="15" id="entrada" placeholder="Digite o texto aqui" autofocus="true" required></textarea>
+                </div>
+                <div>
+                    <textarea class="txts" rows="15" id="saida" placeholder="Saída Criptografada" disabled></textarea>
+                </div>
+                <div></div>
+            </div>
+            <div id="cript">
+                <div id="alerta">
+                    <div id="alerta1"><i class="fa-solid fa-circle-exclamation fa-2x"></i>
+                        </i><p>&nbsp;Apenas letras minúsculas e sem Acento!</p>
+                    </div>
+                    <div id="alerta2">
+                        <a href="javascript:void(0)" onclick="share()"><i class="fa-solid fa-share-nodes fa-2x" id="shareV"></i></a>
+                    </div>
+                </div>
+                <div id="botoes">
+                    <button onclick="encriptar()" class="btns">criptografar</button>
+                    <button onclick="descriptar()" class="btns">descriptografar</button>
+                    <button onclick="copiaECola()" class="btns">copia e cola</button>
+                    <button onclick="limpeza()" class="btns">Limpar</button>
+                </div>
+            </div>
+            <hr>
+            <div id="txtTec"><p>Tecnologias utilizadas</p></div>
+            <div id="tecs">
+                <div><i class="fa-brands fa-html5 fa-3x"></i><p>HTML5</p></div>
+                <div><i class="fa-brands fa-js fa-3x"></i><p>JavaScript</p></div>
+                <div><i class="fa-brands fa-css3-alt fa-3x"></i><p>CSS3</p></div>
+            </div>
+            <footer>
+                <div id="Links"> 
+                    <a href="https://www.linkedin.com/in/rofnas/" target="_blank"><i class="fa-brands fa-linkedin-in fa-2x corBranca"></i></a>
+                    <a href="https://github.com/rofnas" target="_blank"><i class="fa-brands fa-git-alt fa-2x corBranca"></i></a>
+                    <a href="javascript:void(0)" onclick="share()"><i class="fa-solid fa-share-nodes fa-2x corBranca"></i></a>
+                </div>
+            </footer>
+        </main>
+    </body>
+    <script src="https://kit.fontawesome.com/e801e4a6d3.js" crossorigin="anonymous"></script>
+    <script src="js/btns-copiar-limpar.js" defer></script>
+    <script src="js/criptografar.js" defer></script>
+    <script src="js/descriptografar.js" defer></script>
+</html>
